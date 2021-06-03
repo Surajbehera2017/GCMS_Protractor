@@ -1,0 +1,21 @@
+{
+  "name": "GlobalCMS_2_E2E",
+  "version": "1.0.0",
+  "description": "",
+  "main": "qc-arz_conf.js",
+  "dependencies": {
+    "jasmine-reporters": "^2.0.7",
+    "request": "^2.61.0",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "jasmine-reporters": "^2.0.0",
+    "protractor-video-reporter": "^0.3.0",
+    "selenium-server-standalone-jar": "^3.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

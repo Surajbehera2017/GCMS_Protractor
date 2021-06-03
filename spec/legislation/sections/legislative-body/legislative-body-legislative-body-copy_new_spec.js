@@ -1,0 +1,51 @@
+var params = browser.params;
+//i18n basic support
+var I18n = require('../../../../i18n/' + params.language + '.i18n.js');
+//var testData = require('../../../../test-data/' + params.env + '/' + params.BU + '.testdata.js');
+var LegislationDocumentDisplayPage = require('../../../../po/document/display/legis/legis-doc-display.po.js');
+var LegislationDocumentDisplayPageObject = require('../../../../po/document/display/legis/legis-doc-display.po.1.js');
+var LegislationDocumentEditionPageObject = require('../../../../po/document/edition/legis/legis-doc-edition.po.1.js');
+var LegislationDocumentEditionPage = require('../../../../po/document/edition/legis/legis-doc-edition.po.js');
+var legislativebody = require('../../../../po/document/display/legis/sections/legislation-body/legislation-body.po.js');
+var legislativebodyEdition = require('../../../../po/document/edition/legis/sections/legislative-body/legislative-body.po.js');
+var legislativeBodyNewDisplay = require('../../../../po/document/edition/legis/sections/legislative-body/new-legislative-body-po.js');
+
+var legislativebodyEditionNew = require('../../../../po/document/edition/legis/sections/legislative-body/new-legislative-body-po.js');
+
+var global = require('../../../../po/document/display/legis/sections/global-function/global-functions.po.js');
+var jiraNumber = 'GCMSQABANG-2351';
+var testData = require('../../../../test-data/Jira_TestData/Legislation_Body/' + jiraNumber + '.js');
+var loadedData = testData[params.env][params.BU]
+
+describe('Legislation-Body', function () {
+
+    beforeEach(function () {
+        browser.ignoreSynchronization = false;
+        var legisDocEditPage = new LegislationDocumentEditionPage();
+        legisDocEditPage.get(loadedData.marginal_id);
+        legislativebodyEdition.urlLoad(params.valid_username, params.valid_password);
+
+    });
+
+    it('some field copied.'+jiraNumber, function () {
+
+        legislativeBodyNewDisplay.exitEditMode();
+        legislativeBodyNewDisplay.clickYes();
+        legislativeBodyNewDisplay.copyButton();
+        var legisDocDisplayPage = new LegislationDocumentDisplayPage()
+        LegislationDocumentDisplayPageObject.selectcode(loadedData.leg);
+        LegislationDocumentDisplayPageObject.clickcalculate();
+        LegislationDocumentDisplayPageObject.clickCopyOnCopyDocPopup();
+        global.expandSectionInLeftPanel('Statute Data');
+
+        browser.sleep(7000);
+        expect(global.isElementDisplayed(loadedData.verify)).toEqual(true);
+
+        //expect(legislativeBodyNewDisplay.displayLegislativeBody()).toEqual(true);
+        browser.waitForAngular();
+        legislativeBodyNewDisplay.exitEditButton();
+        legislativeBodyNewDisplay.clickYes();
+    });
+
+});
+

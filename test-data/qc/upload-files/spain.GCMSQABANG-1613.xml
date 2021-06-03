@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docs>
+	<legis>
+		<marginal>
+			<nmp>LAN</nmp>
+			<nma>2018</nma>
+			<nmn>101</nmn>
+		</marginal>
+		<texto idioma="spa" definitivo="S">
+			<unidad>
+				<unidad unidad="A" parte="11">
+					<capa>
+						<capa.texto>
+							<titulo>
+								<titulo.original unidad="Art." parte="11"/>
+							</titulo>
+							<parrafo>A empresa que optar pelo regime especial de que trata esta portaria poderá creditar-se mensalmente do valor resultante da aplicação do percentual de 1% sobre o valor total do imposto debitado em Notas Fiscais de Serviço de Comunicação - NFSC, modelo 21, e Notas Fiscais de Serviço de Telecomunicações - NFST, modelo 22, emitidas no período de apuração nos termos da Portaria CAT-79/03, de 10-09-2003.</parrafo>
+							<parrafo>Parágrafo único. O disposto neste artigo somente se aplica às prestações de serviços de comunicação e de telecomunicação sujeitas ao ICMS neste Estado.</parrafo>
+							<parrafo/>
+						</capa.texto>
+					</capa>
+				</unidad>
+			</unidad>
+		</texto>
+	</legis>
+</docs>

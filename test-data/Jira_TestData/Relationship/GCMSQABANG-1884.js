@@ -1,0 +1,168 @@
+var testData = {
+    qc: {
+        spain: {
+            marginal_id: '139889525',
+
+            Relationships: 'Relationships',
+            AddButton: 'Add',
+            LanguageIcon: 'Languages',
+            RelationshipPanel: 'Relationship',
+            LanguageModal: 'Language',
+            Language: 'Catalán',
+            viewAllLink: 'view',
+            closeButton: 'close',
+            showFilter: 'Show Filters',
+            consolidations: 'Consolidations',
+            Target: 'Target',
+            Source: 'Source',
+            Véase: 'Véase',
+            Modifica: 'Modifica',
+            Copy: ' Copy',
+            noteField: 'note',
+            data: 'hello sir',
+            UnitField: 'precu',
+            PartField: 'precp',
+            PartValue: '1',
+            UnitValue: 'A',
+            err_msg: '**- La relación está duplicada.',
+        },
+
+
+        br: {
+            marginal_id: '63002816',
+
+            Relationships: 'Relationships',
+            AddButton: 'Add',
+            LanguageIcon: 'Languages',
+            RelationshipPanel: 'Relationship',
+            LanguageModal: 'Language',
+            Language: 'Catalán',
+            viewAllLink: 'view',
+            closeButton: 'close',
+            showFilter: 'Show Filters',
+            consolidations: 'Consolidations',
+            Target: 'Target',
+            Source: 'Source',
+            Véase: 'Véase',
+            Modifica: 'Modifica',
+            Copy: ' Copy',
+            noteField: 'note',
+            data: 'hello sir',
+            UnitField: 'precu',
+            PartField: 'precp',
+            PartValue: '1',
+            UnitValue: 'A',
+            err_msg: '**- La relación está duplicada.',
+        },
+
+        mexico: {
+            marginal_id: '69004444',
+
+            Relationships: 'Relationships',
+            AddButton: 'Add',
+
+            RelationshipPanel: 'Relationship',
+
+            viewAllLink: 'view',
+            closeButton: 'close',
+            showFilter: 'Show Filters',
+
+            Copy: ' Copy',
+            noteField: 'note',
+
+            UnitField: 'precu',
+            PartField: 'precp',
+            PartValue: '1',
+            UnitValue: 'A',
+            err_msg: '**- La relación está duplicada.',
+        },
+    },
+    client: {
+        spain: {
+            marginal_id: '1574028',
+
+            Relationships: 'Relationships',
+            AddButton: 'Add',
+            LanguageIcon: 'Languages',
+            RelationshipPanel: 'Relationship',
+            LanguageModal: 'Language',
+            Language: 'Catalán',
+            viewAllLink: 'view',
+            closeButton: 'close',
+            showFilter: 'Show Filters',
+            consolidations: 'Consolidations',
+            Target: 'Target',
+            Source: 'Source',
+            Véase: 'Véase',
+            Modifica: 'Modifica',
+            Copy: ' Copy',
+            noteField: 'note',
+            err_msg: '**- La relación está duplicada.',
+            data: 'hello sir',
+            UnitField: 'precu',
+            PartField: 'precp',
+            PartValue: '1',
+            UnitValue: 'A',
+
+        },
+
+        br: {
+            marginal_id: '103846995',
+
+            Relationships: 'Relationships',
+            AddButton: 'Add',
+            LanguageIcon: 'Languages',
+            RelationshipPanel: 'Relationship',
+            LanguageModal: 'Language',
+            Language: 'Catalán',
+            viewAllLink: 'view',
+            closeButton: 'close',
+            showFilter: 'Show Filters',
+            consolidations: 'Consolidations',
+            Target: 'Target',
+            Source: 'Source',
+            Véase: 'Véase',
+            Modifica: 'Modifica',
+            Copy: ' Copy',
+            noteField: 'note',
+            err_msg: '**- La relación está duplicada.',
+            data: 'hello sir',
+            UnitField: 'precu',
+            PartField: 'precp',
+            PartValue: '1',
+            UnitValue: 'A',
+
+        },
+
+        
+        mexico: {
+            marginal_id: '80893091',
+
+            Relationships: 'Relationships',
+            AddButton: 'Add',
+            LanguageIcon: 'Languages',
+            RelationshipPanel: 'Relationship',
+            LanguageModal: 'Language',
+            Language: 'Catalán',
+            viewAllLink: 'view',
+            closeButton: 'close',
+            showFilter: 'Show Filters',
+            consolidations: 'Consolidations',
+            Target: 'Target',
+            Source: 'Source',
+            Véase: 'Véase',
+            Modifica: 'Modifica',
+            Copy: ' Copy',
+            noteField: 'note',
+            data: 'hello sir',
+            UnitField: 'precu',
+            PartField: 'precp',
+            PartValue: '1',
+            UnitValue: 'A',
+            err_msg: '**- La relación está duplicada.',
+        },
+
+    }
+};
+
+module.exports = testData;

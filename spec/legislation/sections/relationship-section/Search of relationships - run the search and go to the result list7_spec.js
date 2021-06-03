@@ -1,0 +1,116 @@
+
+var params = browser.params;
+var I18n = require('../../../../i18n/' + params.language + '.i18n.js');
+var relationshippage = require('../../../../po/document/display/legis/sections/relationship-section/relationship-section1.po.js');
+var LegislationDocumentDisplayPage = require('../../../../po/document/display/legis/legis-doc-display.po.js');
+var legisDocDisplayPage = new LegislationDocumentDisplayPage();
+var globalpage = require('../../../../po/document/display/legis/sections/global-function/global-functions.po.js');
+var relationshipsearch = require('../../../../po/document/display/legis/sections/relationship-search/relationship-search.po.js');
+var jiraNumber = 'GCMSQABANG-2253';
+var testData = require('../../../../test-data/Jira_TestData/Relationship/' + jiraNumber + '.js');
+var loaded = testData[params.env][params.BU];
+
+
+describe('Relationship', function () {
+
+        beforeEach(function () {
+
+                browser.ignoreSynchronization = false;
+                legisDocDisplayPage.get(loaded.marginal_id);
+                relationshippage.urlLoad(params.valid_username, params.valid_password);
+
+        });
+
+
+        //TC17 - Search of relationships - run the search and go to the result list - Ámbito afecta + Obra + Fecha de introducción en base de datos
+
+        it('Search of relationship - Ámbito afecta + Obra + Fecha de introducción en base de datos.' + jiraNumber, function () {
+
+                browser.waitForAngular();
+
+                // click on add button on relationship section 
+                globalpage.clickOnSectionButton(loaded.Relationships, loaded.AddButton);
+
+                //select the relationship type
+                relationshippage.clickandSelect(loaded.TypeField, loaded.relation_type);
+
+                //enter the marginal in target section
+                relationshippage.sendValueTo(loaded.TargetPanel, loaded.CodeField, loaded.code);
+                relationshippage.sendValueTo(loaded.TargetPanel, loaded.YearField, loaded.year);
+                relationshippage.sendValueTo(loaded.TargetPanel, loaded.NumberField, loaded.number);
+
+                //click on document structure and add the unit
+                relationshippage.selectUnitFromStructureButton(loaded.TargetPanel, loaded.unit_name);
+
+                //click on ok button in the popup
+                globalpage.clickOnButtonForGlobal(loaded.ok_button);
+
+                //Click Add 
+                relationshippage.clickOnRelPopUpButtons(loaded.AddButton);
+
+                expect(relationshippage.isErrorDisplayedRelationshipPopup()).toEqual(false);
+                browser.waitForAngular();
+
+                //close add relationship window
+                relationshippage.closeAddorEditRelationshipPopup();
+
+                browser.actions().mouseMove(element(by.css('.block.font-19.ng-binding'))).perform();
+                relationshippage.clickOnBackButton();
+
+                browser.ignoreSynchronization = true;
+                browser.sleep(2000);
+
+                relationshippage.clickOnLinkInAvailableOptions(loaded.legislation);
+                browser.sleep(1000);
+                relationshippage.clickOnLinkInAvailableOptions(loaded.consolidation);
+                browser.sleep(1000);
+                relationshippage.clickOnLinkInAvailableOptions(loaded.consolidation_option);
+                browser.sleep(2000);
+                var ispagepresent = relationshipsearch.isRelationshipSearchPagePresent();
+                expect(ispagepresent).toEqual(true);
+                browser.sleep(1000);
+                relationshipsearch.clickOnTheButton(loaded.clearform_button);
+                browser.sleep(1000);
+                browser.executeScript('window.scrollTo(0,0);');
+                browser.sleep(1000);
+                relationshipsearch.clickOnDropdown(loaded.Section_name, loaded.field_name_2);
+                browser.sleep(1000);
+                relationshipsearch.enterDataAndSelectValue(loaded.Section_name, loaded.field_name_2, loaded.expecteddata_2);
+                browser.sleep(1000);
+                relationshipsearch.clickOnDropdown(loaded.first_section, loaded.field_name_1);
+                browser.sleep(1000);
+                relationshipsearch.enterDataAndSelectValue(loaded.first_section, loaded.field_name_1, loaded.expecteddata_1);
+                browser.sleep(1000);
+                //select the current date next to "date of load"
+                var today = new Date();
+                var dd = today.getDate();
+                var mm = today.getMonth() + 1; //January is 0!
+                var yyyy = today.getFullYear();
+                browser.sleep(1000);
+                relationshipsearch.clickonCalendarIcon(loaded.last_section, loaded.field_name_3);
+                browser.sleep(1000);
+                relationshipsearch.clickOnTheCurrentDay(loaded.last_section, loaded.field_name_3, dd);
+                browser.sleep(1000);
+
+                relationshipsearch.clickOnTheButton(loaded.search_button);
+                browser.sleep(4000);
+
+                var table_header = relationshipsearch.isTableHeaderPresent();
+                expect(table_header).toEqual(true);
+                browser.sleep(2000);
+                relationshipsearch.clickOnRowCheckBox(loaded.unit_name);
+                browser.sleep(1000);
+                relationshipsearch.clickButtonsInsideTable(loaded.delete_button);
+                browser.sleep(2000);
+                globalpage.clickOnButtonForGlobal(loaded.yes_button);
+                browser.sleep(3000);
+                relationshipsearch.clickOnButtonInBreadcrumb(loaded.back_button);
+                browser.sleep(1000);
+                relationshipsearch.clickOnButtonInBreadcrumb(loaded.back_button);
+                browser.sleep(1000);
+                relationshippage.clickOnLinkInAvailableOptions(loaded.legislation);
+                browser.sleep(1000);
+
+        });
+
+});

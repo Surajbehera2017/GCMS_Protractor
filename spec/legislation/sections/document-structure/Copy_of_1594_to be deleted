@@ -1,0 +1,72 @@
+var params = browser.params;
+//var testData = require('../../../../test-data/' + params.env + '/' + params.BU + '.testdata.js');
+var rightpanelpage = require('../../../../po/document/display/legis/sections/right-panel/right-panel.po.js');
+var LegislationDocumentDisplayPage = require('../../../../po/document/display/legis/legis-doc-display.po.js');
+var path = require('path');
+var uploadFolder = '../../../../test-data/' + params.env + '/upload-files/';
+var docFileToUpload = params.BU + '.unitxml_add_as_child.pdf';
+var jiraNumber= 'GCMSQABANG-1609';
+var testData = require('../../../../test-data/Jira_TestData/'+ jiraNumber + '.js');
+var loaded=testData[params.env][params.BU];
+
+describe('Document-structure', function () {
+
+	beforeEach(function () {
+
+		browser.ignoreSynchronization = false;
+		var legisDocDisplayPage = new LegislationDocumentDisplayPage();
+
+		legisDocDisplayPage.get(loaded.marginal_id);
+		rightpanelpage.urlLoad(params.valid_username,params.valid_password);
+
+	});
+
+
+	/*
+     *GCMSQABANG-1609: TC09 - Right Panel - Document Structure - Unit Menu - Add a Unit from Structure using XML - pdf file
+     * 
+     */
+
+	it('Structure Actions Add Unit XML PDF File not possible'+jiraNumber.link(params.jiraURL+jiraNumber), function () {
+
+		browser.waitForAngular();
+        var structure = rightpanelpage.isDocumentStructureTabDisplayedInRightPanel();
+        expect(structure).toEqual(true);
+        rightpanelpage.clickOnRightPanelTab(loaded.document_structure);
+        browser.waitForAngular();
+        browser.sleep(2000);
+        //right clicking on the expectedunit and selecting import from XML
+        console.log(loaded.unit);
+        rightpanelpage.rightClickOnUnitAndSelectImportXML(loaded.unit);
+        browser.waitForAngular();
+        browser.sleep(2000);
+
+       //  verify if Unit is present or not
+        //  rightpanelpage.clickDocumentStructure();
+        // var firstUnit = rightpanelpage.checkUnitIsPresent(loaded.add_analysis.unit_a);
+        // expect(firstUnit).toEqual(true);
+
+        // upload file and verify if file is uploaded or not
+        rightpanelpage.browseXMLFile(path.resolve(__dirname, uploadFolder+docFileToUpload));
+        expect(rightpanelpage.isFileAddedForUploadingXMLFile(docFileToUpload)).toEqual(true);
+        
+        // // verify if multiple radio buttons are present or not
+        var radio = rightpanelpage.isRadioButtonPresentBrowseXML();
+         expect(radio).toEqual(true);
+        
+        // /*click on upper-sibling to  save as different type  and
+        // verify if import button is disabled or not*/
+         rightpanelpage.clickRadioButtonInAddUnitPopUp(loaded.upper);
+         expect(rightpanelpage.isPopUpButtonEnabled('Import')).toEqual(false);
+          rightpanelpage.clickCancelButtonBrowseXML();
+        
+        
+});
+    
+});
+
+
+
+
+
+

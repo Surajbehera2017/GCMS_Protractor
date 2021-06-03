@@ -1,0 +1,172 @@
+var testData = {
+    qc: {
+        spain: {
+            marginal_id_1: '76315481',
+            document_structure: 'DOCUMENT STRUCTURE',
+            version: 'Original',
+            unit_name2:'PE',
+            out_frame_id: 'legistext',
+			inside_frame_id: 'ext-gen1132',
+            tabname_1: 'capatexto',
+            tabname_3:'numparagraph',
+            elementname_3:'numparagraph',
+            elementname_11:'parrafo',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+			field_name2:'text',
+			fieldTextName_2:'text',
+		    field_name3:'type',
+            fieldTextName_3:'type',
+            removemarkup:'Remove markup'
+					
+        },
+        br: {
+            marginal_id_1: '63052404',
+            document_structure: 'DOCUMENT STRUCTURE',
+            version: 'Original',
+            unit_name2:'EP',
+            out_frame_id: 'legistext',
+			inside_frame_id: 'ext-gen1132',
+            tabname_1: 'capatexto',
+            tabname_3:'numparagraph',
+            elementname_3:'numparagraph',
+            elementname_11:'parrafo',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+			field_name2:'text',
+			fieldTextName_2:'text',
+		    field_name3:'type',
+            fieldTextName_3:'type',
+            removemarkup:'Remove markup'
+					
+        },
+        mexico: {
+            marginal_id_1: '68734783',
+            document_structure: 'DOCUMENT STRUCTURE',
+            version: 'Original',
+            unit_name2:'A.1',
+            out_frame_id: 'legistext',
+			inside_frame_id: 'ext-gen1132',
+            tabname_1: 'capatexto',
+            tabname_3:'numparagraph',
+            elementname_3:'numparagraph',
+            elementname_11:'parrafo',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+			field_name2:'text',
+			fieldTextName_2:'text',
+		    field_name3:'type',
+            fieldTextName_3:'type',
+            removemarkup:'Remove markup'
+					
+        },
+
+        gulf:{
+
+            marginal_id_1:'67616684',
+            document_structure:'DOCUMENT STRUCTURE',
+            unit_name2:'HED.1',
+            version:'Original',
+            out_frame_id:'legistext',
+            tabname_1:'grouptext',
+            elementname_3:'numparagraph',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+            field_name2:'text',
+            fieldTextName_2:'text',
+            field_name3:'type',
+            fieldTextName_3:'type',
+            tabname_3:'numparagraph',
+            elementname_11:'paragraph',
+            inside_frame_id:'ext-gen1132',
+            removemarkup:'Remove markup',
+
+        },
+    },
+    client: {
+        spain: {
+            marginal_id_1: '76315481',
+            document_structure: 'DOCUMENT STRUCTURE',
+            version: 'Original',
+            unit_name2:'PE',
+            out_frame_id: 'legistext',
+			inside_frame_id: 'ext-gen1132',
+            tabname_1: 'capatexto',
+            tabname_3:'numparagraph',
+            elementname_3:'numparagraph',
+            elementname_11:'parrafo',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+			field_name2:'text',
+			fieldTextName_2:'text',
+		    field_name3:'type',
+            fieldTextName_3:'type',
+            removemarkup:'Remove markup'
+        },
+        br: {
+            marginal_id_1: '76315481',
+            document_structure: 'DOCUMENT STRUCTURE',
+            version: 'Original',
+            unit_name2:'PE',
+            out_frame_id: 'legistext',
+			inside_frame_id: 'ext-gen1132',
+            tabname_1: 'capatexto',
+            tabname_3:'numparagraph',
+            elementname_3:'numparagraph',
+            elementname_11:'parrafo',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+			field_name2:'text',
+			fieldTextName_2:'text',
+		    field_name3:'type',
+            fieldTextName_3:'type',
+            removemarkup:'Remove markup'
+        },
+
+        mexico: {
+            marginal_id_1: '68734783',
+            document_structure: 'DOCUMENT STRUCTURE',
+            version: 'Original',
+            unit_name2:'A.1',
+            out_frame_id: 'legistext',
+			inside_frame_id: 'ext-gen1132',
+            tabname_1: 'capatexto',
+            tabname_3:'numparagraph',
+            elementname_3:'numparagraph',
+            elementname_11:'parrafo',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+			field_name2:'text',
+			fieldTextName_2:'text',
+		    field_name3:'type',
+            fieldTextName_3:'type',
+            removemarkup:'Remove markup'
+					
+        },
+
+        gulf:{
+            
+            marginal_id_1:'67616885',
+            document_structure:'DOCUMENT STRUCTURE',
+            unit_name2:'HED.1',
+            version:'30/11/2014',
+            out_frame_id:'legistext',
+            tabname_1:'grouptext',
+            elementname_3:'numparagraph',
+            field_name1:'id*',
+            fieldTextName_1:'id',
+            field_name2:'text',
+            fieldTextName_2:'text',
+            field_name3:'type',
+            fieldTextName_3:'type',
+            tabname_3:'numparagraph',
+            elementname_11:'paragraph',
+            inside_frame_id:'ext-gen1132',
+            removemarkup:'Remove markup',
+
+
+        },
+    }
+};
+
+module.exports = testData;

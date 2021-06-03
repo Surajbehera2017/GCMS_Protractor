@@ -1,0 +1,110 @@
+var testData = {
+    qc: {
+        spain: {
+            marginal_id: '76240388',
+            leftpanel: 'Books/Context Index',
+            linktolink: 'viewalllink',
+            btn:'Add',
+            type:'CODEX',
+            hirarechy:'Ley reguladora de la Jurisdicción Contencioso-Administrativa (SM)',
+            term1:'1',
+            save:'Save',
+            loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+            msg:'The following terms have errors, can not be saved',        
+            },
+
+            mexico: {
+                marginal_id: '68742094',
+                leftpanel: 'Books/Context Index',
+                linktolink: 'viewalllink',
+                btn:'Add',
+                type:'CODEX',
+                hirarechy:'Legislación: Listados de revisión',
+                term1:'Ley aduanera',
+                save:'Save',
+                loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+                msg:'The following terms have errors, can not be saved',        
+                },
+
+                gulf:{
+                    marginal_id:'67616482',
+                    leftpanel:'Books/Context Index',
+                    linktolink:'viewalllink',
+                    btn:'Add',
+                    type:'OTHER',
+                    hirarechy:'Business Laws of United Arab Emirates',
+                    term1:'Business Laws of United Arab Emirates (2011 Edition)',
+                    save:'Save',
+                    loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+                    msg:'The following terms have errors, can not be saved',
+
+
+                },
+                br: {
+                    marginal_id: '63074156',
+                    leftpanel: 'Books/Context Index',
+                    linktolink: 'viewalllink',
+                    btn:'Add',
+                    type:'OTHER',
+                    hirarechy:'Regulamentos Checkpoint',
+                    term1:'RICMS-RJ_105205_LGL_2000_3712',
+                    save:'Save',
+                    loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+                    msg:'The following terms have errors, can not be saved',        
+                    },
+    },
+    client: {
+        spain: {
+            marginal_id: '76240388',
+            leftpanel: 'Books/Context Index',
+            linktolink: 'viewalllink',
+            btn:'Add',
+            type:'CODEX',
+            hirarechy:'Ley reguladora de la Jurisdicción Contencioso-Administrativa (SM)',
+            term1:'1',
+            save:'Save',
+            loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+            msg:'The following terms have errors, can not be saved',        
+        },
+        mexico: {
+            marginal_id: '68742094',
+            leftpanel: 'Books/Context Index',
+            linktolink: 'viewalllink',
+            btn:'Add',
+            type:'CODEX',
+            hirarechy:'Compilación Fiscal del Estado de México Correlacionada y Actualizable 2018',
+            term1:'Primeras Páginas',
+            save:'Save',
+            loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+            msg:'The following terms have errors, can not be saved',        
+        },
+
+        gulf:{
+            marginal_id:'67616482',
+            leftpanel:'Books/Context Index',
+            linktolink:'viewalllink',
+            btn:'Add',
+            type:'OTHER',
+            hirarechy:'Business Laws of United Arab Emirates',
+            term1:'Business Laws of United Arab Emirates (2011 Edition)',
+            save:'Save',
+            loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+            msg:'The following terms have errors, can not be saved',
+
+        },
+        br: {
+            marginal_id: '63074156',
+            leftpanel: 'Books/Context Index',
+            linktolink: 'viewalllink',
+            btn:'Add',
+            type:'OTHER',
+            hirarechy:'Regulamentos Checkpoint',
+            term1:'RICMS-RJ_105205_LGL_2000_3712',
+            save:'Save',
+            loc_element:'//div[@class="col-md-10"]//span[@class="ng-scope ng-binding"]',
+            msg:'The following terms have errors, can not be saved',        
+            },
+    }
+};
+
+module.exports = testData;

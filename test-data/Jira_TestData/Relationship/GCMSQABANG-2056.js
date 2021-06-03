@@ -1,0 +1,171 @@
+var testData = {
+    qc: {
+        spain: {
+            marginal_id: '135557297',
+            relation_type: ['añade unidad', 'Véase', 'Modifica'],
+            Relationships: 'Relationships',
+            viewAllLink: 'view',
+            showFilter: 'Show Filters',
+            AddButton: 'Add',
+            TypeField: 'type',
+            TargetPanel: 'Target',
+            CodeField: 'code',
+            YearField: 'year',
+            NumberField: 'num',
+            UnitField: 'precu',
+            closeButton: 'close',
+            Edit: ' Edit',
+            Save: 'Save',
+            PartValue: '2',
+            SourcePanel: 'Source',
+
+            PartField: 'precp',
+            UnitValue: 'A',
+
+            code: 'LEG',
+            year: '2015',
+            number: '1',
+            Edit: 'Edit',
+            rows: '1',
+            yes: 'Yes',
+            error_msg: 'Change not allowed: It is not possible to change the relationship when they correspond to different groups.',
+
+        },
+
+        br: {
+            marginal_id: '63002853',
+            relation_type: ['añade unidad', 'Véase', 'Modifica'],
+            Relationships: 'Relationships',
+            viewAllLink: 'view',
+            showFilter: 'Show Filters',
+            AddButton: 'Add',
+            TypeField: 'type',
+            TargetPanel: 'Target',
+            CodeField: 'code',
+            YearField: 'year',
+            NumberField: 'num',
+            UnitField: 'precu',
+            closeButton: 'close',
+            Edit: ' Edit',
+            Save: 'Save',
+            PartValue: '2',
+            SourcePanel: 'Source',
+
+            PartField: 'precp',
+            UnitValue: 'A',
+
+            code: 'LEG',
+            year: '2015',
+            number: '1',
+            Edit: 'Edit',
+            rows: '1',
+            yes: 'Yes',
+            error_msg: 'Change not allowed: It is not possible to change the relationship when they correspond to different groups.',
+
+        },
+
+        gulf: {
+            marginal_id: '67616708',
+            Relationships: 'Relationships',
+            relation_type: ['Adds unit', 'See', 'Abrogates'],
+            viewAllLink: 'view',
+            showFilter: 'Show Filters',
+            
+            // AddButton: 'Add',
+            TypeField: 'type',
+            TargetPanel: 'Target',
+            rows: '1',
+            yes: 'Yes',
+            error_msg: 'Change not allowed: It is not possible to change the relationship when they correspond to different groups.',
+            Save: 'Save',
+            closeButton: 'close',
+
+        },
+    },
+    client: {
+        spain: {
+            marginal_id: '135557297',
+            relation_type: ['añade unidad', 'Véase', 'Modifica'],
+            Relationships: 'Relationships',
+            viewAllLink: 'view',
+            showFilter: 'Show Filters',
+            AddButton: 'Add',
+            TypeField: 'type',
+            TargetPanel: 'Target',
+            CodeField: 'code',
+            YearField: 'year',
+            NumberField: 'num',
+            UnitField: 'precu',
+            closeButton: 'close',
+            Edit: ' Edit',
+            Save: 'Save',
+            PartValue: '2',
+            SourcePanel: 'Source',
+
+            PartField: 'precp',
+            UnitValue: 'A',
+
+            code: 'LEG',
+            year: '2015',
+            number: '1',
+            Edit: 'Edit',
+            rows: '1',
+            yes: 'Yes',
+            error_msg: 'Change not allowed: It is not possible to change the relationship when they correspond to different groups.',
+        },
+
+
+        br: {
+            marginal_id: '63002939',
+            relation_type: ['añade unidad', 'Véase', 'Modifica'],
+            Relationships: 'Relationships',
+            viewAllLink: 'view',
+            showFilter: 'Show Filters',
+            AddButton: 'Add',
+            TypeField: 'type',
+            TargetPanel: 'Target',
+            CodeField: 'code',
+            YearField: 'year',
+            NumberField: 'num',
+            UnitField: 'precu',
+            closeButton: 'close',
+            Edit: ' Edit',
+            Save: 'Save',
+            PartValue: '2',
+            SourcePanel: 'Source',
+
+            PartField: 'precp',
+            UnitValue: 'A',
+
+            code: 'LEG',
+            year: '2015',
+            number: '1',
+            Edit: 'Edit',
+            rows: '1',
+            yes: 'Yes',
+            error_msg: 'Change not allowed: It is not possible to change the relationship when they correspond to different groups.',
+        },
+
+        gulf:{
+
+            marginal_id: '67616708',
+            Relationships: 'Relationships',
+            relation_type: ['Adds unit', 'See', 'Abrogates'],
+            viewAllLink: 'view',
+            showFilter: 'Show Filters',
+            showFilter: 'Show Filters',
+            // AddButton: 'Add',
+            TypeField: 'type',
+            TargetPanel: 'Target',
+            rows: '1',
+            yes: 'Yes',
+            error_msg: 'Change not allowed: It is not possible to change the relationship when they correspond to different groups.',
+            Save: 'Save',
+            closeButton: 'close',
+
+        },
+
+    }
+};
+
+module.exports = testData;

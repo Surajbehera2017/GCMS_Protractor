@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docs>
+	<legis>
+		<marginal>
+			<nmp>UAELEG-AD-DECREE-EMIRI</nmp>
+			<nma>2008</nma>
+			<nmn>10</nmn>
+		</marginal>
+		<texto language="spa" definitivo="S">
+			<unidad>
+				<unidad unidad="ART" parte="1">
+					<capa>
+						<capa.texto>
+							<titulo>
+								<titulo.original unidad="Art." parte="1"/>
+							</titulo>
+							<parrafo>A empresa que optar pelo regime especial de que trata esta portaria poderá creditar-se mensalmente do valor resultante da aplicação do percentual de 1% sobre o valor total do imposto debitado em Notas Fiscais de Serviço de Comunicação - NFSC, modelo 21, e Notas Fiscais de Serviço de Telecomunicações - NFST, modelo 22, emitidas no período de apuração nos termos da Portaria CAT-79/03, de 10-09-2003.</parrafo>
+							<parrafo>Testing In GCMS Gulf.</parrafo>
+							<parrafo/>
+						</capa.texto>
+					</capa>
+				</unidad>
+			</unidad>
+		</texto>
+	</legis>
+</docs>
+

@@ -1,0 +1,8 @@
+syntax: glob
+e2e-reports/*
+node_modules/*
+*_conf.js
+*.orig
+*.rej
+*.hg
+.hg/*
